@@ -15,8 +15,9 @@
     </div>
     <div>
       <button @tap="retDraw" class="del-btn">清除</button>
-      <button @tap="subCanvas" class="sub-btn">保存</button>
-      <button @tap="onConfirm" class="sub-btn">保存到本地</button>
+      <button @tap="subCanvas" class="sub-btn">横向签字板</button>
+      <button @tap="onConfirm" class="sub-btn">保存</button>
+      <button @tap="onConfirmWithTag" class="sub-btn">保存（水印）</button>
     </div>
     <div>
       <img :src="filePath" alt />
@@ -145,6 +146,7 @@ export default Vue.extend({
         }
       })
     },
+    onConfirmWithTag() {}
   }
 });
 </script>
@@ -159,6 +161,7 @@ export default Vue.extend({
 #handwriting {
   /* width: 80vw;
   height: 50vh; */
+  width: 100%;
   height: 100%;
 }
 </style>

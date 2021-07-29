@@ -9,9 +9,9 @@
  * http://www.lemoda.net/maths/bezier-length/index.html
  */
 
- import Bezier from './bezier';
- import Point from './point';
- import throttle from './throttle';
+ import Bezier from './bezier.js';
+ import Point from './point.js';
+ import throttle from './throttle.js';
  
  
  export default class SignaturePad {

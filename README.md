@@ -1,5 +1,7 @@
 # handwriting
 
+A mini-program with handwriting.
+
 ## Project setup
 ```
 yarn install

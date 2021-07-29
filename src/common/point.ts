@@ -13,7 +13,7 @@ export default class Point {
   equals(other: Point) {
     return this.x === other.x && this.y === other.y && this.time === other.time;
   }
-  velocityFrom(start: Point): number {
+  velocityFrom(start: Point) {
     return (this.time !== start.time) ? this.distanceTo(start) / (this.time.getTime() - start.time.getTime()) : 0;
   }
 }
